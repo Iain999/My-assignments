@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flood Monitoring Proposal</title>
+  <style>
+    body {
+      margin: 0;
+      background: #eee;
+      font-family: sans-serif;
+      padding: 0;
+      line-height: 1.8;
+    }
+    .canvas {
+      width: 1120px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 10px #999;
+      overflow-y: auto;
+    }
+    h1 {
+      font-family: 'Merriweather', serif;
+      color: darkred;
+      font-size: 4em; /* Twice as big */
+      margin-top: 50px;
+      text-align: center;
+    }
+    h2 {
+      font-family: 'Arial', sans-serif;
+      color: gray;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    h3 {
+      font-family: 'Merriweather', serif;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      margin: 10px 0;
+      line-height: 2; /* Increased line spacing */
+    }
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .image-row img {
+      width: 49%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .page {
+      page-break-after: always;
+    }
+    .no-page-break {
+      page-break-inside: avoid;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> <!-- Merriweather font -->
+</head>
+<body>
+  <!-- Page 1 -->
+  <div class="canvas page">
+    <h1>ALERT, EVACUATE AND SAVE LIVES!</h1>
+    <h2>Proposed by Group 6</h2>
+
+    <h3>OBJECTIVE:</h3>
+    <p>To install a flood-monitoring tower near the shoreline that will detect rising ocean water levels and provide timely alerts to nearby communities, helping them evacuate before flooding reaches residential areas.</p>
+
+    <h3>WHY THIS MATTERS:</h3>
+    <p>People living near the ocean are at risk when sea levels suddenly rise, especially during typhoons or heavy rain. With a proper warning system, they’ll have more time to evacuate safely. That’s why placing the tower in the right spot is really important.</p>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="canvas page">
+    <h3>USING TRIGONOMETRY:</h3>
+    <p>Math calculation: </p>
+    <p>Many of you are wondering how far the tower is from the household. Does it not affect their lifestyle? Well, let me do a little word problem to show you well.</p>
+
+    <p>A 10-meter tall tower is placed 125 meters from the shoreline. A man is standing on his balcony, which is 6 meters high, located 250 meters from the shoreline. He looks horizontally toward the top of the tower and wonders how far it is from him.</p>
+
+    <p>We’ll compute the horizontal distance between the man and the tower, using their height difference and their positions. And if it really affects their everyday lifestyle. </p>
+
+    <p>Given:</p>
+    <ul>
+      <li>Height of tower = 10 meters</li>
+      <li>Height of man’s balcony = 6 meters</li>
+      <li>Vertical difference = 10 − 6 = 4 meters</li>
+      <li>Man’s distance from shoreline = 250 meters</li>
+      <li>Tower’s distance from shoreline = 125 meters</li>
+    </ul>
+
+    <p>Horizontal distance between them: x = 250 − 125 = 125 meters</p>
+    <p>Now, let's solve it.</p>
+
+    <p>Use Trigonometry to Find Angle of Elevation:</p>
+    <p>Tanθ = opposite/adjacent<br>
+    Tanθ = 4/125<br>
+    Tanθ = 0.032<br>
+    θ = tan<sup>-1</sup>(0.032) = 1.83°</p>
+
+    <p>The horizontal distance from the man’s balcony to the tower is 125 meters, which fits perfectly within the recommended placement—100–150 meters from the shoreline for the tower, and 200–300 meters from the houses.</p>
+
+    <p>I also calculated the angle of elevation from the balcony (which is 6 meters high) to the top of the 10-meter tower, and it came out to be around 1.83°. That’s a really small angle, meaning the tower can easily be seen from the balcony, and more importantly, it shows that the tower’s distance is realistic, safe, and effective for sending out alerts in case of rising water levels.</p>
+
+    <p>This confirms that the placement works well both mathematically and practically, especially in real-life situations where early warnings are needed.</p>
+
+    <h3>WHEN TO SEND ALERTS?</h3>
+    <p>At 4.5 meters and above, areas near the shoreline are already in danger, so the tower must sound the alarm.</p>
+
+    <h3>SPECIAL MATERIALS TO USE:</h3>
+    <ul>
+      <li><b>Solar Panels:</b> The system will be powered by a Renogy 200W 12V solar panel kit. This kit includes the panels, charge controller, and mounting equipment. It is designed for off-grid use and can be upgraded if additional power is needed.</li>
+      <li><b>Water Level Sensors:</b> To monitor rising water levels, a VEGAPULS C 11 radar sensor will be used. It is reliable in various weather conditions. A Honeywell PX3 pressure sensor will also be included as a backup.</li>
+      <li><b>Controller (System Brain):</b> A Raspberry Pi 4 will serve as the central controller. It will process the sensor data and activate the alarm when necessary. An Arduino may be used as a simpler alternative if required.</li>
+      <li><b>Alarm System:</b> The Federal Signal SelecTone 300X will be installed to serve as the emergency alarm. It is durable, weather-resistant, and capable of producing loud alerts.</li>
+      <li><b>Battery Storage:</b> Energy from the solar panels will be stored in a Battle Born 12V 100Ah lithium battery. This battery is safe, efficient, and well-suited for solar-powered systems.</li>
+      <li><b>Electronics Enclosure:</b> All electronic components will be housed in a PolyCase waterproof enclosure. This enclosure is UV-resistant and provides reliable protection in outdoor environments.</li>
+    </ul>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="canvas page no-page-break">
+    <div class="image-row">
+      <img src="https://files.oaiusercontent.com/file-D6h5GRMU9YiiNG48KBEgtP?se=2025-04-05T14%3A26%3A16Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dimage.png&sig=/LxwjOSYc87Er1oqC6TbCgcEHZYn1XBaZBtC3pvfnYU%3D" alt="Image 1">
+      <img src="https://files.oaiusercontent.com/file-D6h5GRMU9YiiNG48KBEgtP?se=2025-04-05T14%3A26%3A16Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dimage.png&sig=/LxwjOSYc87Er1oqC6TbCgcEHZYn1XBaZBtC3pvfnYU%3D" alt="Image 2">
+    </div>
+  </div>
+</body>
+</html>
